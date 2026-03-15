@@ -1,4 +1,4 @@
-name: Build and Push NEW Version Wheel
+name: Build and Deploy NEW Version Wheel
 on:
   workflow_dispatch:
 
