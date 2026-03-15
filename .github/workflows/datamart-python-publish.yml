@@ -51,7 +51,7 @@ jobs:
     - name: Checkout target repo
       uses: actions/checkout@v4
       with:
-        repository: bswsahoo11111/ingest-data-using-wheel-in-adb
+        repository: https://github.com/bswsahoo11111/cdm.git
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         path: target-repo
 
