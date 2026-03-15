@@ -22,7 +22,7 @@ def run(env_config, system, table, operation, timestamp, start_time, end_time, d
     SELECT account_number, gdp_processtime_stamp, identifier_type
     FROM {source_catalog}.{source_schema}.{source_table}
     WHERE gdp_processtime_stamp > (SELECT MAX(update_time) FROM {target_catalog}.{target_schema}.{target_table})
-    AND card_type = 'Barclays'
+    or card_type = 'Barclays'
     """
 
     if dry_run:
