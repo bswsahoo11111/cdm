@@ -51,7 +51,7 @@ jobs:
     - name: Checkout target repo
       uses: actions/checkout@v4
       with:
-        repository: https://github.com/bswsahoo11111/cdm.git
+        repository: github.com/bswsahoo11111/cdm
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         path: target-repo
 
